@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Container{
+            height: 90vh;
+            width: 90vw;
+            border: 5px solid black;
+        }
+        .Container ul {
+            height: 50px;
+            background-color: black;
+            
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content:space-around ;
+            
+            
+        }
+        .Container ul li a{
+            text-decoration: none;
+            color: aliceblue;
+            padding: 10px;
+        }
+        @media screen and (max-width:768px){
+            .Container ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: darkgray;
+
+
+            }
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="Container">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+
+        </ul>
+    </div>
+</body>
+</html>

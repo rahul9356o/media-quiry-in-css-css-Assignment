@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Task 5</title>
+    <style>
+        .Container{
+            height: 100vh;
+            width: 100vw;
+            
+            /* box-sizing: border-box; */
+            display: grid;
+            grid-template-columns:150px 1fr 150px;
+            grid-template-rows: repeat(2,1fr);
+            
+            
+             
+
+
+        }
+        .BOX1{
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            background-color: black;
+            color: aliceblue;
+            
+            
+
+        }
+        .BOX4{
+          grid-row-start: 1;
+          grid-row-end: 3;
+          grid-column-start: 3;
+          grid-column-end: 4;
+          
+          background-color: black;
+          color: aliceblue;
+        }
+        .BOX3{
+            background-color: aquamarine;
+        /* width: 100%; */
+        }
+        .BOX2{
+            background-color: chocolate;
+
+        }
+        @media screen and (max-width:600px){
+            .Container{
+                
+        
+                display: flex;
+                flex-direction: column;
+
+
+            }
+            .BOX4{
+            margin-top: 300px;
+
+                
+            }
+            .Box{
+                padding: 30px;
+            }
+            
+        }
+    </style>
+
+</head>
+<body>
+    <div class="Container">
+        <div class="Box BOX1">Box1</div>
+        <div class="Box BOX2">Box2</div>
+        <div class="Box BOX3">Box3</div>
+        <div class="Box BOX4">Box4</div>
+
+
+    </div>
+</body>
+</html>
